@@ -1,0 +1,127 @@
+/* clearfix */
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+
+
+
+
+#pageHeader{
+	height: 100px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+#pageHeader #logo{
+	height:100px;
+	background: transparent url("../img/logo.png") no-repeat;
+}
+
+#pageHeader #tagline{
+	position: absolute;
+	top: 25px;
+	right: 70px;
+	color: white;
+}
+
+#pageHeader #tagline h1{
+	font-size: 2em;
+}
+
+#pageHeader #tagline h2{
+	font-size: 1.5em;
+
+}
+
+.module{
+	width: 23%;
+	float:left;
+	height: 550px;
+	border: 2px solid grey;
+	margin: 2px;
+	
+	-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px; /* future proofing */
+-khtml-border-radius: 10px; /* for old Konqueror browsers */
+
+	vertical-align: middle;
+	line-height: 1.7;
+}
+
+.module h2{
+	font-size: 1.5em;
+	color: white;
+	text-align: center;
+	background-color: grey;
+	min-height: 50px
+}
+
+.module li{
+	margin: 5px;
+	background-color: grey;
+	line-height: 1.2;
+	color: white;
+		border: 1px solid grey;
+	-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px; /* future proofing */
+-khtml-border-radius: 5px; /* for old Konqueror browsers */
+}
+
+#wrapper{
+	padding-left: 10px;
+	margin: 0 auto;
+	width: 95%;
+	
+
+
+}
+
+footer{
+	margin-top : 5px;
+
+}
+
+
+body{
+		
+/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #004261));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #FFFFFF 0%, #004261 100%);
+}
