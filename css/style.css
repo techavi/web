@@ -57,7 +57,7 @@ html[xmlns] .clearfix {
 	float:left;
 	height: 550px;
 	border: 2px solid grey;
-	margin: 2px;
+	margin: 2px 2px 20px;
 	
 	-moz-border-radius: 10px;
 -webkit-border-radius: 10px;
@@ -73,19 +73,29 @@ border-radius: 10px; /* future proofing */
 	color: white;
 	text-align: center;
 	background-color: grey;
-	min-height: 50px
+	height: 40px;
+	width : 180px;
+	margin : 15px auto;
+	
+	
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; /* future proofing */
+    -khtml-border-radius: 15px; /* for old Konqueror browsers */
+	
 }
 
 .module li{
 	margin: 5px;
 	background-color: grey;
+	padding : 7px;
 	line-height: 1.2;
 	color: white;
-		border: 1px solid grey;
-	-moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border-radius: 5px; /* future proofing */
--khtml-border-radius: 5px; /* for old Konqueror browsers */
+	
+	-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 15px; /* future proofing */
+-khtml-border-radius: 15px; /* for old Konqueror browsers */
 }
 
 #wrapper{
@@ -97,31 +107,12 @@ border-radius: 5px; /* future proofing */
 
 }
 
-footer{
-	margin-top : 5px;
+#pageFooter{
+	margin : 5px 5px 20px;
+	text-align : center;
+	color : grey;
 
 }
 
 
-body{
-		
-/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
 
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* Opera */ 
-background-image: -o-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #004261));
-
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to bottom right, #FFFFFF 0%, #004261 100%);
-}
