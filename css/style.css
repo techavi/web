@@ -9,9 +9,9 @@
 	height: 0;
 }
  
-.clearfix {
+/*.clearfix {
 	display: inline-block;
-}
+}*/
  
 html[xmlns] .clearfix {
 	display: block;
@@ -20,11 +20,6 @@ html[xmlns] .clearfix {
 * html .clearfix {
 	height: 1%;
 }
-
-
-
-
-
 #pageHeader{
 	height: 100px;
 	position: relative;
@@ -33,38 +28,45 @@ html[xmlns] .clearfix {
 
 #pageHeader #logo{
 	height:100px;
-	background: transparent url("../img/logo.png") no-repeat;
+	background: transparent url('../img/logo.png') no-repeat;
 }
 
-#pageHeader #tagline{
-	position: absolute;
-	top: 25px;
-	right: 70px;
-	color: white;
+#pageHeader #links{
+	position :absolute;
+	top : 85px;
+	right :30px;
 }
 
-#pageHeader #tagline h1{
-	font-size: 2em;
+#pageHeader #links ul li{
+	display : inline;
+	color : white;
+	font-size : 20px;
+	padding : 2px;
+	background-color: grey;
+	margin : 2px;
+	
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; /* future proofing */
+    -khtml-border-radius: 15px; /* for old Konqueror browsers */
 }
-
-#pageHeader #tagline h2{
-	font-size: 1.5em;
-
+#pageHeader ul li a{
+	color : white;
 }
-
 .module{
-	width: 23%;
+	width: 24%;
 	float:left;
-	height: 550px;
+	height: 450px;
 	border: 2px solid grey;
-	margin: 2px;
+	margin: 2px 2px 20px;
+	
 	
 	-moz-border-radius: 10px;
--webkit-border-radius: 10px;
-border-radius: 10px; /* future proofing */
--khtml-border-radius: 10px; /* for old Konqueror browsers */
+    -webkit-border-radius: 10px;
+    border-radius: 10px; 
+    -khtml-border-radius: 10px; /* for old Konqueror browsers */
 
-	vertical-align: middle;
+	text-align: middle;
 	line-height: 1.7;
 }
 
@@ -73,55 +75,48 @@ border-radius: 10px; /* future proofing */
 	color: white;
 	text-align: center;
 	background-color: grey;
-	min-height: 50px
+	//min-height: 50px;
+	height : 40px;
+	width : 180px;
+	margin : 15px auto;
+	
+	
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; /* future proofing */
+    -khtml-border-radius: 15px; /* for old Konqueror browsers */
 }
 
 .module li{
 	margin: 5px;
 	background-color: grey;
+	padding : 7px;
 	line-height: 1.2;
 	color: white;
-		border: 1px solid grey;
-	-moz-border-radius: 5px;
--webkit-border-radius: 5px;
-border-radius: 5px; /* future proofing */
--khtml-border-radius: 5px; /* for old Konqueror browsers */
+	//border-bottom: 2px solid grey;
+	//border-top: 2px solid white;
+	
+	
+	
+	-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px; /* future proofing */
+    -khtml-border-radius: 15px; /* for old Konqueror browsers */
+	
 }
-
+.content{
+	height : 350px;
+	width : 98%;
+}
 #wrapper{
 	padding-left: 10px;
 	margin: 0 auto;
 	width: 95%;
-	
-
-
 }
 
-footer{
-	margin-top : 5px;
-
-}
-
-
-body{
-		
-/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
-
-/* IE10 Consumer Preview */ 
-background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* Opera */ 
-background-image: -o-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #004261));
-
-/* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #004261 100%);
-
-/* W3C Markup, IE10 Release Preview */ 
-background-image: linear-gradient(to bottom right, #FFFFFF 0%, #004261 100%);
+#pageFooter{
+	margin : 5px 5px 20px;
+	text-align : center;
+	color : grey;
+	height : 100px;
 }
